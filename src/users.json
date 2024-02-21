@@ -1,0 +1,10 @@
+{
+  "users": [
+    {
+      "name": "Developer",
+      "email": "dev@gmail.com",
+      "password": "$2b$08$WfZ2j5lhymJlBHiFbP.vdeC4m3NJy4U5mvLaMOdSWnsDcYZlNIn32",
+      "preferences": ["movies", "general"]
+    }
+  ]
+}
