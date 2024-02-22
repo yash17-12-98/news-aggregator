@@ -4,7 +4,7 @@ let url = "https://newsapi.org/v2/top-headlines";
 
 const getNews = async (req, res) => {
   try {
-    let data = await getTopHeadline(url, ["general", "technology"]);
+    let data = await getTopHeadline(url, req.user.preferences);
 
     return res.status(200).send({ news: data });
   } catch (e) {
