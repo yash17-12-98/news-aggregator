@@ -1,6 +1,7 @@
 const express = require("express");
 const authRoute = require("./routes/auth.route.js");
 const preferencesRoute = require("./routes/preferences.route.js");
+const newsRoute = require("./routes/news.route.js");
 const app = express();
 
 app.use(express.json());
@@ -12,6 +13,7 @@ const port = process.env.PORT;
 
 app.use("/users", authRoute);
 app.use("/users/preferences", preferencesRoute);
+app.use("/news", newsRoute);
 
 app.listen(port, (err) => {
   if (err) {
