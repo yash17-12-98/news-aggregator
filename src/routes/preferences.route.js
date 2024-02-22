@@ -1,13 +1,13 @@
 const express = require("express");
-const router = express.Router();
+const preferences = express.Router();
 const { verifyToken } = require("../middlewares/auth.middleware");
 const {
   getPreferences,
   updatePreferences,
 } = require("../controllers/preferences.controller");
 
-router.get("/", verifyToken, getPreferences);
+preferences.get("/", verifyToken, getPreferences);
 
-router.put("/", verifyToken, updatePreferences);
+preferences.put("/", verifyToken, updatePreferences);
 
-module.exports = router;
+module.exports = preferences;
