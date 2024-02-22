@@ -2,8 +2,7 @@ const authenticatedUsers = require("../users.json");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const fs = require("fs");
-const Validator = require("../validators/auth.validator");
-const { userInfo } = require("os");
+const Validator = require("../validators/validator");
 
 const signUp = (req, res) => {
   const userRequest = req.body;

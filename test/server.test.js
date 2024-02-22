@@ -2,6 +2,7 @@ const tap = require("tap");
 const supertest = require("supertest");
 const app = require("../src/app");
 const server = supertest(app);
+const bcrypt = require("bcrypt");
 
 const mockUser = {
   name: "Clark Kent",
@@ -59,6 +60,8 @@ tap.test("GET /users/preferences", async (t) => {
   t.hasOwnProp(response.body, "preferences");
   t.same(response.body.preferences, mockUser.preferences);
   t.end();
+
+  console.log("Test Preferences =>", response.body);
 });
 
 tap.test("GET /users/preferences without token", async (t) => {

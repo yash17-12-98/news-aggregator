@@ -30,6 +30,17 @@ class Validator {
       };
     }
   }
+
+  static validateNewsPreferences(preferences) {
+    if (preferences && preferences.length != 0) {
+      return { status: true, message: "News preferences has been validated" };
+    } else {
+      return {
+        status: false,
+        message: "Please provide atleast one news preferences",
+      };
+    }
+  }
 }
 
 module.exports = Validator;

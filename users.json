@@ -1,1 +1,10 @@
-{"users":[{"name":"yash","email":"yash@gmail.com","password":"1234","preferences":["movies"]}]}
+{
+  "users": [
+    {
+      "name": "yash",
+      "email": "yash@gmail.com",
+      "password": "1234",
+      "preferences": ["movies"]
+    }
+  ]
+}
