@@ -63,23 +63,16 @@ const login = (req, res) => {
     return res.status(404).json({ meesage: "User not found" });
   }
 
-  console.log("user request pwd", userRequest.password);
-
-  console.log("user request pwd", existingUser.password);
-
   const isPasswordValid = bcrypt.compareSync(
     userRequest.password,
     existingUser.password
   );
 
-  console.log("Check isPasswordValid ", isPasswordValid);
   if (!isPasswordValid) {
     return res.status(401).json({ message: "Invalid password" });
   }
 
   const token = generateAccessToken(existingUser.email);
-
-  console.log("Token", token);
 
   return res.status(200).json({
     message: "Login successfully",

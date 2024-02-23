@@ -1,1 +1,10 @@
-{"users":[{"name":"Developer","email":"dev@gmail.com","password":"$2b$08$WfZ2j5lhymJlBHiFbP.vdeC4m3NJy4U5mvLaMOdSWnsDcYZlNIn32","preferences":["technology"]},{"name":"Clark Kent","email":"clark@superman.com","password":"$2b$08$l00ELJTD073lcq4/yAr7Q.KuXeZQsOuS20/aiSPDSQPbWVayTl4yO","preferences":["movies","comics","games"]}]}
+{
+  "users": [
+    {
+      "name": "Developer",
+      "email": "dev@gmail.com",
+      "password": "$2b$08$WfZ2j5lhymJlBHiFbP.vdeC4m3NJy4U5mvLaMOdSWnsDcYZlNIn32",
+      "preferences": ["movies", "comics", "technology"]
+    }
+  ]
+}
